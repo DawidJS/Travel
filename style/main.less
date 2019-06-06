@@ -22,12 +22,16 @@ body {
 
 /**/
 
+
 .topText {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 10px solid @color-h;
+    //border: 10px solid @color-h;
     margin: 175px 170px 310px 175px;
+    background: url(/img/top.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     p {
         font-family: @font-family-p;
         font-weight: bold;
@@ -249,12 +253,21 @@ body {
                 height: 57px;
                 width: 180px;
                 border-width: 1px;
-                margin-top: 310px;
+                margin-top: 70px;
                 margin-bottom: 60px;
                 &:extend(.buttonStandart);
             }
             .container-input{
                 display: flex;
+                margin-top: 60px;
+                margin-bottom: 50px;
+                .nameData{
+                    margin-right: 45px;
+                    width: 214px;
+                }
+            }
+            .areaSize{
+                width: 470px;
             }
         }
     }
